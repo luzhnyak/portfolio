@@ -1,12 +1,19 @@
-import React from "react";
+import { useState } from "react";
 import FilterSkills from "../components/FilterSkills/FilterSkills";
+import Gallery from "../components/Gallery/Gallery";
+import Main from "../components/Main/Main";
+import Sidebar from "../components/Sidebar/Sidebar";
 
 const ProjectsPage = () => {
+  const [filters, setFilters] = useState<string[]>([]);
+
   return (
-    <div>
-      ProjectsPage
-      <FilterSkills />
-    </div>
+    <Main>
+      <Sidebar>
+        <FilterSkills filters={filters} setFilters={setFilters} />
+      </Sidebar>
+      <Gallery filters={filters} />
+    </Main>
   );
 };
 

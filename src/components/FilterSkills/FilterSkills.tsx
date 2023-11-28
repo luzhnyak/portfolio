@@ -5,79 +5,108 @@ import {
   FaPython,
   FaFlask,
   FaNodeJs,
+  FaCaretDown,
 } from "react-icons/fa";
 
 import { TbBrandJavascript } from "react-icons/tb";
 import { SiTypescript, SiNextdotjs } from "react-icons/si";
-import { FilterItem, FilterList } from "./FilterSkills.styled";
+import {
+  FilterItem,
+  FilterList,
+  FilterTitle,
+  FilterTitleWrapper,
+  FilterWrapper,
+} from "./FilterSkills.styled";
 
-const FilterSkills = () => {
+const skills = [
+  {
+    name: "html",
+    title: "HTML",
+    icon: <FaHtml5 size={24} />,
+  },
+  {
+    name: "css",
+    title: "CSS",
+    icon: <FaCss3Alt size={24} />,
+  },
+  {
+    name: "javascript",
+    title: "JavaScript",
+    icon: <TbBrandJavascript size={24} />,
+  },
+  {
+    name: "typescript",
+    title: "TypeScript",
+    icon: <SiTypescript size={24} />,
+  },
+  {
+    name: "react",
+    title: "React",
+    icon: <FaReact size={24} />,
+  },
+  {
+    name: "next",
+    title: "Next.js",
+    icon: <SiNextdotjs size={24} />,
+  },
+  {
+    name: "node",
+    title: "Node.js",
+    icon: <FaNodeJs size={24} />,
+  },
+  {
+    name: "python",
+    title: "Python",
+    icon: <FaPython size={24} />,
+  },
+  {
+    name: "flask",
+    title: "Flask",
+    icon: <FaFlask size={24} />,
+  },
+];
+
+type Props = {
+  filters: string[];
+  setFilters: any;
+};
+
+const FilterSkills: React.FC<Props> = ({ filters, setFilters }) => {
+  const handleChange = (event: any) => {
+    if (event.target.checked) {
+      setFilters((prev: any) => [...prev, event.target.name]);
+    } else {
+      setFilters((prev: any) =>
+        prev.filter((item: string) => item !== event.target.name)
+      );
+    }
+  };
+
   return (
-    <FilterList>
-      <FilterItem>
-        <label htmlFor="html">
-          <input type="checkbox" id="html" name="skill" />
-          <FaHtml5 size={24} />
-          HTML
-        </label>
-      </FilterItem>
-      <FilterItem>
-        <label htmlFor="css">
-          <input type="checkbox" id="css" name="skill" />
-          <FaCss3Alt size={24} />
-          CSS
-        </label>
-      </FilterItem>
-      <FilterItem>
-        <label htmlFor="javascript">
-          <input type="checkbox" id="javascript" name="skill" />
-          <TbBrandJavascript size={24} />
-          JavaScript
-        </label>
-      </FilterItem>
-      <FilterItem>
-        <label htmlFor="typescript">
-          <input type="checkbox" id="typescript" name="skill" />
-          <SiTypescript size={24} />
-          TypeScript
-        </label>
-      </FilterItem>
-      <FilterItem>
-        <label htmlFor="react">
-          <input type="checkbox" id="react" name="skill" />
-          <FaReact size={24} />
-          React
-        </label>
-      </FilterItem>
-      <FilterItem>
-        <label htmlFor="next">
-          <input type="checkbox" id="next" name="skill" />
-          <SiNextdotjs size={24} />
-          Next.js
-        </label>
-      </FilterItem>
-      <FilterItem>
-        <label htmlFor="node">
-          <input type="checkbox" id="node" name="skill" />
-          <FaNodeJs size={24} />
-          Node.js
-        </label>
-      </FilterItem>
-      <FilterItem>
-        <label htmlFor="python">
-          <input type="checkbox" id="python" name="skill" />
-          <FaPython size={24} />
-          Python
-        </label>
-      </FilterItem>
-      <FilterItem>
-        <label htmlFor="flask">
-          <input type="checkbox" id="flask" name="skill" />
-          <FaFlask size={24} />
-          Flask
-        </label>
-      </FilterItem>
-    </FilterList>
+    <FilterWrapper>
+      <FilterTitleWrapper>
+        <FaCaretDown />
+        <FilterTitle>projects</FilterTitle>
+      </FilterTitleWrapper>
+      <FilterList>
+        {skills.map(({ name, title, icon }) => {
+          return (
+            <FilterItem key={name}>
+              <label htmlFor={name}>
+                <input
+                  type="checkbox"
+                  id={name}
+                  name={name}
+                  onChange={handleChange}
+                />
+                {icon}
+                {title}
+              </label>
+            </FilterItem>
+          );
+        })}
+      </FilterList>
+    </FilterWrapper>
   );
 };
 export default FilterSkills;

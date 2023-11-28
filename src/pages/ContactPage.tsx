@@ -1,7 +1,12 @@
-import React from "react";
+import Main from "../components/Main/Main";
+import Sidebar from "../components/Sidebar/Sidebar";
 
 const ContactPage = () => {
-  return <div>ContactPage</div>;
+  return (
+    <Main>
+      <Sidebar>ContactPage</Sidebar>
+    </Main>
+  );
 };
 
 export default ContactPage;

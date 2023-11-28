@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;
@@ -12,7 +12,7 @@ export const FooterList = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  border: 1px solid #1e2d3d;
+  border-top: 1px solid #1e2d3d;
 `;
 
 export const FooterItem = styled.li`

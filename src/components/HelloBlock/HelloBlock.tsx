@@ -5,11 +5,12 @@ import {
   SubTitle,
   Title,
   UperTitle,
+  Wrapper,
 } from "./HelloBlock.styled";
 
 const HelloBlock = () => {
   return (
-    <div>
+    <Wrapper>
       <UperTitle>Hi all. I am</UperTitle>
       <Title>Oleh Luzhniak</Title>
       <SubTitle>{">"} Front-end developer</SubTitle>
@@ -19,7 +20,7 @@ const HelloBlock = () => {
         const <span>githubLink = </span>
         <a href="">“https://github.com/example/url”</a>
       </GitHubLink>
-    </div>
+    </Wrapper>
   );
 };
 

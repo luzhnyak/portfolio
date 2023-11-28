@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 0px;
+  /* margin-top: auto; */
+  /* margin-left: 280px; */
+  margin-right: 130px;
+  /* background-color: aliceblue; */
 `;
 
 export const UperTitle = styled.p`

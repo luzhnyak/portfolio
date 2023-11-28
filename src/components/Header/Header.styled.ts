@@ -6,8 +6,9 @@ export const MenuList = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  border: 1px solid #1e2d3d;
+  border-bottom: 1px solid #1e2d3d;
 `;
+
 export const MenuItem = styled.li`
   padding: 17px 32px;
   border-right: 1px solid #1e2d3d;
