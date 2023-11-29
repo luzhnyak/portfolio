@@ -10,19 +10,6 @@ export const FilterWrapper = styled.div`
   line-height: normal;
 `;
 
-export const FilterTitleWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border-bottom: 1px solid #1e2d3d;
-  padding-left: 22px;
-  color: #fff;
-`;
-
-export const FilterTitle = styled.div`
-  padding: 10px;
-`;
-
 export const FilterList = styled.ul`
   list-style: none;
 `;

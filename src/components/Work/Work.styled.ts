@@ -4,11 +4,11 @@ import styled from "styled-components";
 //   $justifyContent: string | undefined;
 // };
 
-export const SidebarWrapper = styled.aside`
-  width: 289px;
+export const WorkWrapper = styled.aside`
+  /* width: 289px; */
   height: 100%;
   border-right: 1px solid #1e2d3d;
-
+  flex: 1;
   color: #607b96;
   font-family: Fira Code;
   font-size: 16px;
@@ -19,16 +19,17 @@ export const SidebarWrapper = styled.aside`
 
 // flex-start
 
-export const SidebarTitleWrapper = styled.div`
+export const WorkTitleWrapper = styled.div`
+  /* width: 289px; */
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 50px;
   border-top: 1px solid #1e2d3d;
   border-bottom: 1px solid #1e2d3d;
-  padding-left: 22px;
-  color: #fff;
+  border-right: 1px solid #1e2d3d;
+  padding-left: 14px;
 `;
 
-export const SidebarTitle = styled.div`
+export const WorkTitle = styled.div`
   padding: 10px;
 `;

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { SidebarWrapper } from "./Sidebar.styled";
 
 type Props = {

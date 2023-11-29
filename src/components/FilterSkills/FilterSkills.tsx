@@ -5,18 +5,11 @@ import {
   FaPython,
   FaFlask,
   FaNodeJs,
-  FaCaretDown,
 } from "react-icons/fa";
 
 import { TbBrandJavascript } from "react-icons/tb";
 import { SiTypescript, SiNextdotjs } from "react-icons/si";
-import {
-  FilterItem,
-  FilterList,
-  FilterTitle,
-  FilterTitleWrapper,
-  FilterWrapper,
-} from "./FilterSkills.styled";
+import { FilterItem, FilterList, FilterWrapper } from "./FilterSkills.styled";
 
 const skills = [
   {
@@ -84,10 +77,6 @@ const FilterSkills: React.FC<Props> = ({ filters, setFilters }) => {
 
   return (
     <FilterWrapper>
-      <FilterTitleWrapper>
-        <FaCaretDown />
-        <FilterTitle>projects</FilterTitle>
-      </FilterTitleWrapper>
       <FilterList>
         {skills.map(({ name, title, icon }) => {
           return (
