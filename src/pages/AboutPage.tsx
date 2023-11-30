@@ -13,6 +13,7 @@ import Work from "../components/Work/Work";
 
 import "prismjs/themes/prism-tomorrow.css";
 import CodeSnippet from "../components/CodeSnippet/CodeSnippet";
+import { useEffect } from "react";
 // import "prismjs/themes/prism-okaidia.min.css";
 
 // import "prismjs/plugins/line-numbers/prism-line-numbers.min.css";
@@ -40,6 +41,10 @@ export function parseModelTuple(
 `.trim();
 
 const AboutPage = () => {
+  useEffect(() => {
+    document.title = "Oleh Luzhniak - About me";
+  }, []);
+
   return (
     <Main>
       <Sidebar>

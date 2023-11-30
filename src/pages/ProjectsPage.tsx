@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FilterSkills from "../components/FilterSkills/FilterSkills";
 import Gallery from "../components/Gallery/Gallery";
 import Main from "../components/Main/Main";
@@ -7,6 +7,10 @@ import SidebarBlock from "../components/Sidebar/SidebarBlock";
 
 const ProjectsPage = () => {
   const [filters, setFilters] = useState<string[]>([]);
+
+  useEffect(() => {
+    document.title = "Oleh Luzhniak - Projects";
+  }, []);
 
   return (
     <Main>

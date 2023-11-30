@@ -70,7 +70,7 @@ type Props = {
   setFilters: any;
 };
 
-const FilterSkills: React.FC<Props> = ({ filters, setFilters }) => {
+const FilterSkills: React.FC<Props> = ({ setFilters }) => {
   const handleChange = (event: any) => {
     if (event.target.checked) {
       setFilters((prev: any) => [...prev, event.target.name]);

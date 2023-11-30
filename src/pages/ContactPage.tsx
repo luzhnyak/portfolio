@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Main from "../components/Main/Main";
 import Contacts from "../components/Sidebar/Contacts";
@@ -35,6 +35,10 @@ const ContactPage = () => {
   const [mesage, setMessage] = useState(
     "Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!"
   );
+
+  useEffect(() => {
+    document.title = "Oleh Luzhniak - Contacts";
+  }, []);
 
   return (
     <Main>
