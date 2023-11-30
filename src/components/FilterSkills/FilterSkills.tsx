@@ -8,7 +8,8 @@ import {
 } from "react-icons/fa";
 
 import { TbBrandJavascript } from "react-icons/tb";
-import { SiTypescript, SiNextdotjs } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiCsharp } from "react-icons/si";
+
 import { FilterItem, FilterList, FilterWrapper } from "./FilterSkills.styled";
 
 const skills = [
@@ -56,6 +57,11 @@ const skills = [
     name: "flask",
     title: "Flask",
     icon: <FaFlask size={24} />,
+  },
+  {
+    name: "c#",
+    title: "C#",
+    icon: <SiCsharp size={24} />,
   },
 ];
 

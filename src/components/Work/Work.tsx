@@ -1,22 +1,34 @@
 import React from "react";
 
-import { FaCaretDown, FaRegWindowClose } from "react-icons/fa";
-import { WorkTitle, WorkTitleWrapper, WorkWrapper } from "./Work.styled";
+import { IoClose } from "react-icons/io5";
+
+import {
+  WorkContentWrapper,
+  WorkTitle,
+  WorkTitleWrapper,
+  WorkWrapper,
+} from "./Work.styled";
 
 type Props = {
   title?: string;
+  rightBorder?: boolean;
   children: React.ReactNode;
 };
 
-const Work: React.FC<Props> = ({ title, children }) => {
+const Work: React.FC<Props> = ({ title, children, rightBorder }) => {
   return (
-    <WorkWrapper>
-      <WorkTitleWrapper>
-        <WorkTitle>{title}</WorkTitle>
-        <FaRegWindowClose />
+    <WorkWrapper $rightBorder={rightBorder}>
+      <WorkTitleWrapper $rightBorder={!!title}>
+        {title && (
+          <>
+            <WorkTitle>
+              <span>{title}</span>
+            </WorkTitle>
+            <IoClose size={18} />
+          </>
+        )}
       </WorkTitleWrapper>
-
-      {children}
+      <WorkContentWrapper>{children}</WorkContentWrapper>
     </WorkWrapper>
   );
 };

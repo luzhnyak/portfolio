@@ -54,6 +54,8 @@ export const CardText = styled.p`
   font-style: normal;
   font-weight: 450;
   line-height: 150%; /* 27px */
+  overflow-y: hidden;
+  height: 54px;
 `;
 
 export const CardButton = styled.button`

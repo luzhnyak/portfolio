@@ -15,4 +15,11 @@ body {
   margin: 0;
   background-color: #010c15;
   color: #e5e9f0;
+  font-family: Fira Code;
+  font-style: normal;
+  line-height: normal;
+}
+
+.line-numbers span.line-numbers-rows {
+  margin-top: -1px;
 }
