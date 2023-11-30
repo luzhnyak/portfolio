@@ -41,7 +41,7 @@ const CodeSnippet: React.FC<Props> = ({ code }) => {
       <CodeSnippetContent>
         <pre
           className="line-numbers"
-          style={{ backgroundColor: "transparent" }}
+          style={{ backgroundColor: "transparent", overflow: "hidden" }}
         >
           <code className="language-javascript">{code}</code>
         </pre>

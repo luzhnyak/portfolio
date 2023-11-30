@@ -4,6 +4,7 @@ import Gallery from "../components/Gallery/Gallery";
 import Main from "../components/Main/Main";
 import Sidebar from "../components/Sidebar/Sidebar";
 import SidebarBlock from "../components/Sidebar/SidebarBlock";
+import Work from "../components/Work/Work";
 
 const ProjectsPage = () => {
   const [filters, setFilters] = useState<string[]>([]);
@@ -19,7 +20,9 @@ const ProjectsPage = () => {
           <FilterSkills filters={filters} setFilters={setFilters} />
         </SidebarBlock>
       </Sidebar>
-      <Gallery filters={filters} />
+      <Work title="Projects">
+        <Gallery filters={filters} />
+      </Work>
     </Main>
   );
 };

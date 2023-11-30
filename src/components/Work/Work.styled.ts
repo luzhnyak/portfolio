@@ -6,16 +6,13 @@ type Props = {
 
 export const WorkWrapper = styled.section<Props>`
   /* width: 289px; */
-  height: 100%;
+  height: calc(100% - 42px);
   border-right: ${(props) =>
     props.$rightBorder ? "1px solid #1e2d3d" : "none"};
   flex: 1;
   color: #607b96;
-  font-family: Fira Code;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 `;
 
 export const WorkContentWrapper = styled.div`
@@ -23,9 +20,10 @@ export const WorkContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   border-top: 1px solid #1e2d3d;
-  height: 90%;
+  height: 100%;
+  overflow: auto;
   /* background-color: antiquewhite; */
   gap: 50px;
 `;

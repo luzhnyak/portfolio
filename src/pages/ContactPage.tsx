@@ -12,29 +12,53 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import Work from "../components/Work/Work";
 import CodeSnippet from "../components/CodeSnippet/CodeSnippet";
 import ContactForm from "../components/ContactForm/ContactForm";
+import Prism from "prismjs";
+import CodeForm from "../components/CodeSnippet/CodeForm";
 
-const code = `const button = document.querySelector('#sendBtn');
+const splitMessage = (message: string): string => {
+  const len = 36;
+  const tab = 8;
+  let newMessage = "";
+  const words = message.split(" ");
+  let countRow = 1;
+
+  words.forEach((word) => {
+    console.log(countRow * (len + tab) - tab);
+
+    if ((newMessage + word).length >= countRow * (len + tab) - tab) {
+      newMessage += `\n${"".padStart(tab)}${word}`;
+      countRow += 1;
+    } else {
+      newMessage += ` ${word}`;
+    }
+  });
+
+  return newMessage.trim();
+};
+
+const ContactPage = () => {
+  const [name, setName] = useState("Jonathan Davis");
+  const [email, setEmail] = useState("jonathan-davis@gmail.com");
+  const [message, setMessage] = useState(
+    "Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!"
+  );
+
+  const code = `const button = document.querySelector('#sendBtn');
 
 const message = {
-	name: "Jonathan Davis",
-	email: "jonathan-davis@gmail.com",
-	message: "Hey! Just checked your website
-            and it looks awesome!
-            Also, I checked your articled on Medium.
-            Lerned a few nice tips. Thanks!",
-	date: "Thu 21 Apr"
+	name: "${name}",
+	email: "${email}",
+	message: "${splitMessage(message)}",
+	date: "${new Date().toLocaleString()}"
 }
 
 button.addEventListener('click', () => {
 	form.send(message);
 })`.trim();
 
-const ContactPage = () => {
-  const [name, setName] = useState("Jonathan Davis");
-  const [email, setEmail] = useState("jonathan-davis@gmail.com");
-  const [mesage, setMessage] = useState(
-    "Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!"
-  );
+  useEffect(() => {
+    Prism.highlightAll();
+  }, [name, email, message]);
 
   useEffect(() => {
     document.title = "Oleh Luzhniak - Contacts";
@@ -67,14 +91,14 @@ const ContactPage = () => {
         <ContactForm
           name={name}
           email={email}
-          message={mesage}
+          message={message}
           setEmail={setEmail}
           setName={setName}
           setMessage={setMessage}
         />
       </Work>
       <Work>
-        <CodeSnippet code={code} />
+        <CodeForm code={code} />
       </Work>
     </Main>
   );

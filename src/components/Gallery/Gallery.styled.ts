@@ -6,11 +6,14 @@ import styled from "styled-components";
 
 export const GalleryWrapper = styled.div`
   /* background-color: aquamarine; */
-  height: 90%;
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100%;
+  width: 100%;
+  /* margin-top: 40px; */
 
   overflow-y: scroll;
-  width: 100%;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

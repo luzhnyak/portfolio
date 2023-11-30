@@ -8,7 +8,7 @@ export const MainWrapper = styled.main<Props>`
   display: flex;
   justify-content: ${(props) =>
     props.$justifyContent ? props.$justifyContent : "flex-start"};
-  align-items: center;
+  align-items: flex-start;
   height: calc(100vh - 144px);
   /* background-color: aqua; */
 `;

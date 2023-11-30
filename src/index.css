@@ -23,3 +23,39 @@ body {
 .line-numbers span.line-numbers-rows {
   margin-top: -1px;
 }
+
+.scrollbar-track-x,
+.scrollbar-thumb-x {
+  height: 5px !important;
+}
+
+.scrollbar-track-y,
+.scrollbar-thumb-y {
+  width: 5px !important;
+}
+
+.scroll-content:hover ~ .scrollbar-track {
+  opacity: 1;
+}
+
+.custom-class {
+  background: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  /* background-color: #010c15; */
+  border: 1px solid #1e2d3d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #607b96;
+  /* border-radius: 4px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1e2d3d;
+}
