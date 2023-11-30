@@ -67,15 +67,15 @@ const skills = [
 
 type Props = {
   filters: string[];
-  setFilters: any;
+  setFilters: (value: string[] | ((prev: string[]) => string[])) => void;
 };
 
 const FilterSkills: React.FC<Props> = ({ setFilters }) => {
-  const handleChange = (event: any) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.checked) {
-      setFilters((prev: any) => [...prev, event.target.name]);
+      setFilters((prev: string[]) => [...prev, event.target.name]);
     } else {
-      setFilters((prev: any) =>
+      setFilters((prev: string[]) =>
         prev.filter((item: string) => item !== event.target.name)
       );
     }

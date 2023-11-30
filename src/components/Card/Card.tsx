@@ -16,7 +16,7 @@ type Props = {
   name: string;
 };
 
-const Card: React.FC<Props> = ({ id, img, text, url, name }) => {
+const Card: React.FC<Props> = ({ id, img, text, name }) => {
   return (
     <CardWrapper>
       <CardTitle>
