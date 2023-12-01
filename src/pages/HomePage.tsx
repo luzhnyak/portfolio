@@ -3,6 +3,7 @@ import HelloBlock from "../components/HelloBlock/HelloBlock";
 import Main from "../components/Main/Main";
 
 import gameImg from "/game.png";
+import Work from "../components/Work/Work";
 
 const HomePage = () => {
   useEffect(() => {
@@ -11,8 +12,10 @@ const HomePage = () => {
 
   return (
     <Main justifyContent="center">
-      <HelloBlock />
-      <img src={gameImg} />
+      <Work>
+        <HelloBlock />
+        <img src={gameImg} className="md" />
+      </Work>
     </Main>
   );
 };

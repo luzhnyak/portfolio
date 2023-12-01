@@ -14,6 +14,7 @@ import Work from "../components/Work/Work";
 import "prismjs/themes/prism-tomorrow.css";
 import CodeSnippet from "../components/CodeSnippet/CodeSnippet";
 import { useEffect } from "react";
+import WorkTab from "../components/Work/WorkTab";
 // import "prismjs/themes/prism-okaidia.min.css";
 
 // import "prismjs/plugins/line-numbers/prism-line-numbers.min.css";
@@ -53,12 +54,14 @@ const AboutPage = () => {
           <Contacts />
         </SidebarBlock>
       </Sidebar>
-      <Work title="personal-info" rightBorder>
-        Work
-      </Work>
       <Work>
-        <CodeSnippet code={code1}></CodeSnippet>
-        <CodeSnippet code={code2}></CodeSnippet>
+        <WorkTab title="personal-info" rightBorder>
+          Work
+        </WorkTab>
+        <WorkTab className="md">
+          <CodeSnippet code={code1}></CodeSnippet>
+          <CodeSnippet code={code2}></CodeSnippet>
+        </WorkTab>
       </Work>
     </Main>
   );

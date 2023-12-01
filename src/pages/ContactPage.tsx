@@ -10,10 +10,11 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import SidebarBlock from "../components/Sidebar/SidebarBlock";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Work from "../components/Work/Work";
-import CodeSnippet from "../components/CodeSnippet/CodeSnippet";
+
 import ContactForm from "../components/ContactForm/ContactForm";
 import Prism from "prismjs";
 import CodeForm from "../components/CodeSnippet/CodeForm";
+import WorkTab from "../components/Work/WorkTab";
 
 const splitMessage = (message: string): string => {
   const len = 36;
@@ -87,18 +88,20 @@ button.addEventListener('click', () => {
           </ContactsList>
         </SidebarBlock>
       </Sidebar>
-      <Work title="contacts" rightBorder>
-        <ContactForm
-          name={name}
-          email={email}
-          message={message}
-          setEmail={setEmail}
-          setName={setName}
-          setMessage={setMessage}
-        />
-      </Work>
       <Work>
-        <CodeForm code={code} />
+        <WorkTab title="contacts" rightBorder>
+          <ContactForm
+            name={name}
+            email={email}
+            message={message}
+            setEmail={setEmail}
+            setName={setName}
+            setMessage={setMessage}
+          />
+        </WorkTab>
+        <WorkTab className="md">
+          <CodeForm code={code} />
+        </WorkTab>
       </Work>
     </Main>
   );

@@ -9,6 +9,12 @@ export const MainWrapper = styled.main<Props>`
   justify-content: ${(props) =>
     props.$justifyContent ? props.$justifyContent : "flex-start"};
   align-items: flex-start;
+  /* flex-wrap: wrap; */
   height: calc(100vh - 144px);
   /* background-color: aqua; */
+
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `;

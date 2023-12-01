@@ -5,6 +5,7 @@ import Main from "../components/Main/Main";
 import Sidebar from "../components/Sidebar/Sidebar";
 import SidebarBlock from "../components/Sidebar/SidebarBlock";
 import Work from "../components/Work/Work";
+import WorkTab from "../components/Work/WorkTab";
 
 const ProjectsPage = () => {
   const [filters, setFilters] = useState<string[]>([]);
@@ -20,8 +21,10 @@ const ProjectsPage = () => {
           <FilterSkills filters={filters} setFilters={setFilters} />
         </SidebarBlock>
       </Sidebar>
-      <Work title="Projects">
-        <Gallery filters={filters} />
+      <Work>
+        <WorkTab title="Projects">
+          <Gallery filters={filters} />
+        </WorkTab>
       </Work>
     </Main>
   );

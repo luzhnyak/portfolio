@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  /* margin-top: auto; */
+  margin: 16px;
   /* margin-left: 280px; */
   margin-right: 130px;
   /* background-color: aliceblue; */

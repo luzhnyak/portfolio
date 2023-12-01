@@ -14,7 +14,7 @@ const CodeForm: React.FC<Props> = ({ code }) => {
   }, []);
 
   return (
-    <CodeSnippetWrapper>
+    <CodeSnippetWrapper className="md">
       <CodeSnippetContent>
         <pre
           className="line-numbers"

@@ -5,7 +5,8 @@ type Props = {
 };
 
 export const SidebarWrapper = styled.aside`
-  width: 289px;
+  /* flex-basis: 389px; */
+  width: 300px;
   height: 100%;
   border-right: 1px solid #1e2d3d;
 
@@ -15,6 +16,9 @@ export const SidebarWrapper = styled.aside`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 // flex-start

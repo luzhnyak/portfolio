@@ -4,9 +4,23 @@ type Props = {
   $rightBorder: boolean | undefined;
 };
 
-export const WorkWrapper = styled.section<Props>`
+export const WorkWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
+`;
+
+export const WorkTabWrapper = styled.section<Props>`
+  /* background-color: antiquewhite; */
   /* width: 289px; */
-  height: calc(100% - 42px);
+  height: 100%;
   border-right: ${(props) =>
     props.$rightBorder ? "1px solid #1e2d3d" : "none"};
   flex: 1;
@@ -40,6 +54,10 @@ export const WorkTitleWrapper = styled.div<Props>`
 
   border-right: ${(props) =>
     props.$rightBorder ? "1px solid #1e2d3d" : "none"};
+
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const WorkTitle = styled.div`

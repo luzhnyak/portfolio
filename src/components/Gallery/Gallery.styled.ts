@@ -19,4 +19,7 @@ export const GalleryWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  @media only screen and (max-width: 767px) {
+    overflow-y: inherit;
+  }
 `;
