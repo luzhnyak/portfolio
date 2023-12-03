@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 export const FilterWrapper = styled.div`
   /* width: 100%; */
+  padding: 16px;
   color: #607b96;
-  font-family: Fira Code;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 `;
 
 export const FilterList = styled.ul`

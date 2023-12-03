@@ -28,12 +28,13 @@ export const MenuItem = styled.li`
     padding: 17px 16px 17px 32px;
     width: 300px;
   }
-  &.hide {
-    display: none;
-  }
+
   @media only screen and (max-width: 767px) {
     margin: 0;
     border: none;
+    &.hide {
+      display: none;
+    }
   }
 `;
 

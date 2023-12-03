@@ -46,7 +46,7 @@ export const WorkTitleWrapper = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+
   height: 41px;
   padding-left: 14px;
   padding-right: 14px;

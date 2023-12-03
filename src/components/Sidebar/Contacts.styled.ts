@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactsList = styled.ul`
   margin-left: 0;
-  padding-left: 22px;
+  padding: 16px;
   list-style: none;
 `;
 

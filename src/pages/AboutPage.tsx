@@ -15,6 +15,8 @@ import "prismjs/themes/prism-tomorrow.css";
 import CodeSnippet from "../components/CodeSnippet/CodeSnippet";
 import { useEffect } from "react";
 import WorkTab from "../components/Work/WorkTab";
+import AboutMenu from "../components/AboutMenu/AboutMenu";
+import { Outlet } from "react-router-dom";
 // import "prismjs/themes/prism-okaidia.min.css";
 
 // import "prismjs/plugins/line-numbers/prism-line-numbers.min.css";
@@ -49,14 +51,16 @@ const AboutPage = () => {
   return (
     <Main>
       <Sidebar>
-        <SidebarBlock title="personal-info">contacts</SidebarBlock>
+        <SidebarBlock title="personal-info">
+          <AboutMenu />
+        </SidebarBlock>
         <SidebarBlock title="contacts" topBorder>
           <Contacts />
         </SidebarBlock>
       </Sidebar>
       <Work>
         <WorkTab title="personal-info" rightBorder>
-          Work
+          <Outlet />
         </WorkTab>
         <WorkTab className="md">
           <CodeSnippet code={code1}></CodeSnippet>
