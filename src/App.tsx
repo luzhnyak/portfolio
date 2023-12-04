@@ -8,6 +8,8 @@ import NotFoundPage from "./pages/NotFoundPage";
 import AboutBioPages from "./pages/AboutBioPages";
 import AboutUniversityPages from "./pages/AboutUniversity.Page";
 import AboutWorkPages from "./pages/AboutWorkPages";
+import AboutCertificationsPage from "./pages/AboutCertificationsPage";
+import AboutInterestsPage from "./pages/AboutInterestsPage";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         <Route path="about" element={<AboutPage />}>
           <Route index element={<AboutBioPages />} />
           <Route path="work" element={<AboutWorkPages />} />
+          <Route path="interests" element={<AboutInterestsPage />} />
           <Route path="university" element={<AboutUniversityPages />} />
+          <Route path="certifications" element={<AboutCertificationsPage />} />
         </Route>
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="contact" element={<ContactPage />} />

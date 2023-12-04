@@ -24,20 +24,20 @@ const AboutMenu = () => {
       <Item>
         <FaChevronRight color="#81A1C1" />
         <FaFolder color="#43D9AD" />
-        <AboutLink to="">interests</AboutLink>
+        <AboutLink to="interests">interests</AboutLink>
       </Item>
       <Item>
         <FaChevronDown color="#81A1C1" />
         <FaFolder color="#3A49A4" />
-        <AboutLink to="">education</AboutLink>
-      </Item>
-      <Item className="tab">
-        <FaFileCode color="#81A1C1" />
-        <AboutLink to="">high-school</AboutLink>
+        <AboutLink to="university">education</AboutLink>
       </Item>
       <Item className="tab">
         <FaFileCode color="#81A1C1" />
         <AboutLink to="university">university</AboutLink>
+      </Item>
+      <Item className="tab">
+        <FaFileCode color="#81A1C1" />
+        <AboutLink to="certifications">certifications</AboutLink>
       </Item>
     </Menu>
   );
