@@ -14,10 +14,17 @@ import {
 } from "./CodeSnippet.styled";
 
 type Props = {
-  code: string;
+  data: {
+    code: string;
+    user?: string;
+    dateCreate?: string;
+    countStar?: number;
+  };
 };
 
-const CodeSnippet: React.FC<Props> = ({ code }) => {
+const CodeSnippet: React.FC<Props> = ({
+  data: { code, dateCreate = "5 months ago", countStar = 3, user = "username" },
+}) => {
   useEffect(() => {
     Prism.highlightAll();
   }, []);
@@ -26,8 +33,8 @@ const CodeSnippet: React.FC<Props> = ({ code }) => {
     <CodeSnippetWrapper>
       <CodeSnippetTitleWrapper>
         <div>
-          <UserName>@username</UserName>
-          <DateCreate>Created 5 months ago</DateCreate>
+          <UserName>{`@${user}`}</UserName>
+          <DateCreate>{`Created ${dateCreate}`}</DateCreate>
         </div>
 
         <Details>
@@ -35,7 +42,8 @@ const CodeSnippet: React.FC<Props> = ({ code }) => {
           details
         </Details>
         <Details>
-          <FaStar />3 stars
+          <FaStar />
+          {`${countStar} stars`}
         </Details>
       </CodeSnippetTitleWrapper>
       <CodeSnippetContent>

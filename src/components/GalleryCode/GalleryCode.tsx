@@ -1,32 +1,13 @@
+// Import Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { EffectCoverflow, Pagination, Mousewheel } from "swiper/modules";
+
 import { GalleryWrapper } from "./GalleryCode.styled";
 import CodeSnippet from "../CodeSnippet/CodeSnippet";
 
-const code1 = `
-function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {
-  const value: T = parseModel(chunk._response, chunk._value);
-  const initializedChunk: InitializedChunk<T> = (chunk: any);
-  initializedChunk._status = INITIALIZED;
-  initializedChunk._value = value;
-  return value;
-}
-`.trim();
-
-const code2 = `
-export function parseModelTuple(
-  response: Response,
-  value: {+[key: string]: JSONValue} | $ReadOnlyArray<JSONValue>,
-): any {
-  const tuple: [mixed, mixed, mixed, mixed] = (value: any);
-}
-`.trim();
+import { codeList } from "../../data/codeList";
 
 const GalleryCode = () => {
   return (
@@ -54,33 +35,13 @@ const GalleryCode = () => {
         mousewheel={true}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <CodeSnippet code={code2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CodeSnippet code={code1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CodeSnippet code={code2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CodeSnippet code={code1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CodeSnippet code={code2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CodeSnippet code={code1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CodeSnippet code={code2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CodeSnippet code={code1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CodeSnippet code={code2} />
-        </SwiperSlide>
+        {codeList.map((item) => {
+          return (
+            <SwiperSlide>
+              <CodeSnippet data={item} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </GalleryWrapper>
   );

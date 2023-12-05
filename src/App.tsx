@@ -5,11 +5,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import Layout from "./components/Layout";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import AboutBioPages from "./pages/about/AboutBioPages";
-import AboutUniversityPages from "./pages/about/AboutUniversity.Page";
-import AboutWorkPages from "./pages/about/AboutWorkPages";
-import AboutCertificationsPage from "./pages/about/AboutCertificationsPage";
-import AboutInterestsPage from "./pages/about/AboutInterestsPage";
+import AboutContentPage from "./pages/AboutContentPage";
 
 function App() {
   return (
@@ -17,11 +13,20 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />}>
-          <Route index element={<AboutBioPages />} />
-          <Route path="work" element={<AboutWorkPages />} />
-          <Route path="interests" element={<AboutInterestsPage />} />
-          <Route path="university" element={<AboutUniversityPages />} />
-          <Route path="certifications" element={<AboutCertificationsPage />} />
+          <Route index element={<AboutContentPage slug="bio" />} />
+          <Route path="work" element={<AboutContentPage slug="work" />} />
+          <Route
+            path="interests"
+            element={<AboutContentPage slug="interests" />}
+          />
+          <Route
+            path="university"
+            element={<AboutContentPage slug="university" />}
+          />
+          <Route
+            path="certifications"
+            element={<AboutContentPage slug="certifications" />}
+          />
         </Route>
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="contact" element={<ContactPage />} />

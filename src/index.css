@@ -103,9 +103,6 @@ body {
   object-fit: cover;
 }
 
-.swiper-slide-active {
-  /* background-color: #1e2d3d; */
-}
 .swiper-slide-prev {
   opacity: 0.5;
   filter: alpha(opacity=30); /* For IE8 and earlier */
