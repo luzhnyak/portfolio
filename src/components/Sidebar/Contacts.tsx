@@ -1,4 +1,4 @@
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
 import { ContactsItem, ContactsList } from "./Contacts.styled";
 
 const Contacts = () => {
@@ -9,8 +9,10 @@ const Contacts = () => {
         <a href="mailto:luzhnyak@gmail.com">luzhnyak@gmail.com</a>
       </ContactsItem>
       <ContactsItem>
-        <FaPhoneAlt size={16} />
-        <a href="tel:">+38 (097) 258 10 00</a>
+        <FaTelegramPlane size={16} />
+        <a href="https://t.me/oleghaker" target="_blank">
+          Telegram
+        </a>
       </ContactsItem>
     </ContactsList>
   );

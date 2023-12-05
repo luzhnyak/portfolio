@@ -8,7 +8,7 @@ import Work from "../components/Work/Work";
 import WorkTab from "../components/Work/WorkTab";
 
 const ProjectsPage = () => {
-  const [filters, setFilters] = useState<string[]>([]);
+  const [filters, setFilters] = useState<string[]>(["html", "c#"]);
 
   useEffect(() => {
     document.title = "Oleh Luzhniak - Projects";

@@ -5,7 +5,7 @@ import styled from "styled-components";
 // };
 
 export const CodeSnippetWrapper = styled.div`
-  max-width: 600px;
+  /* max-width: 700px; */
   padding: 16px;
 `;
 
@@ -13,6 +13,7 @@ export const CodeSnippetTitleWrapper = styled.div`
   display: flex;
   gap: 16px;
   margin-bottom: 12px;
+  text-align: left;
   div {
     margin-right: auto;
   }

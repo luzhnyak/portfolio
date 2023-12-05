@@ -1,4 +1,3 @@
-import React from "react";
 import { AboutLink, Item, Menu } from "./AboutMenu.styled";
 
 import {

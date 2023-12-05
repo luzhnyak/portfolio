@@ -18,6 +18,8 @@ export const WorkWrapper = styled.div`
 `;
 
 export const WorkTabWrapper = styled.section<Props>`
+  display: flex;
+  flex-direction: column;
   /* background-color: antiquewhite; */
   /* width: 289px; */
   height: 100%;
@@ -30,7 +32,6 @@ export const WorkTabWrapper = styled.section<Props>`
 `;
 
 export const WorkContentWrapper = styled.div`
-  /* width: 289px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,8 +39,8 @@ export const WorkContentWrapper = styled.div`
   border-top: 1px solid #1e2d3d;
   height: 100%;
   overflow: auto;
-  /* background-color: antiquewhite; */
-  gap: 50px;
+  /* background-color: gray; */
+  /* gap: 50px; */
 `;
 
 export const WorkTitleWrapper = styled.div<Props>`
@@ -47,7 +48,7 @@ export const WorkTitleWrapper = styled.div<Props>`
   align-items: center;
   justify-content: space-between;
 
-  height: 41px;
+  height: 43px;
   padding-left: 14px;
   padding-right: 14px;
   width: 230px;

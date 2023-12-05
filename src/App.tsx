@@ -5,11 +5,11 @@ import ProjectsPage from "./pages/ProjectsPage";
 import Layout from "./components/Layout";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import AboutBioPages from "./pages/AboutBioPages";
-import AboutUniversityPages from "./pages/AboutUniversity.Page";
-import AboutWorkPages from "./pages/AboutWorkPages";
-import AboutCertificationsPage from "./pages/AboutCertificationsPage";
-import AboutInterestsPage from "./pages/AboutInterestsPage";
+import AboutBioPages from "./pages/about/AboutBioPages";
+import AboutUniversityPages from "./pages/about/AboutUniversity.Page";
+import AboutWorkPages from "./pages/about/AboutWorkPages";
+import AboutCertificationsPage from "./pages/about/AboutCertificationsPage";
+import AboutInterestsPage from "./pages/about/AboutInterestsPage";
 
 function App() {
   return (
