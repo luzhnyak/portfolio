@@ -15,6 +15,7 @@ import ContactForm from "../components/ContactForm/ContactForm";
 import Prism from "prismjs";
 import CodeForm from "../components/CodeSnippet/CodeForm";
 import WorkTab from "../components/Work/WorkTab";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const splitMessage = (message: string): string => {
   const len = 36;
@@ -24,8 +25,6 @@ const splitMessage = (message: string): string => {
   let countRow = 1;
 
   words.forEach((word) => {
-    console.log(countRow * (len + tab) - tab);
-
     if ((newMessage + word).length >= countRow * (len + tab) - tab) {
       newMessage += `\n${"".padStart(tab)}${word}`;
       countRow += 1;
@@ -56,6 +55,8 @@ const message = {
 button.addEventListener('click', () => {
 	form.send(message);
 })`.trim();
+
+  const matches = useMediaQuery("(max-width: 767px)");
 
   useEffect(() => {
     Prism.highlightAll();
@@ -99,9 +100,11 @@ button.addEventListener('click', () => {
             setMessage={setMessage}
           />
         </WorkTab>
-        <WorkTab className="md">
-          <CodeForm code={code} />
-        </WorkTab>
+        {!matches && (
+          <WorkTab>
+            <CodeForm code={code} />
+          </WorkTab>
+        )}
       </Work>
     </Main>
   );

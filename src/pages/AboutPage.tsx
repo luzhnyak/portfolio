@@ -12,8 +12,11 @@ import AboutMenu from "../components/AboutMenu/AboutMenu";
 import { Outlet } from "react-router-dom";
 
 import { codeList } from "../data/codeList";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const AboutPage = () => {
+  const matches = useMediaQuery("(max-width: 767px)");
+
   useEffect(() => {
     document.title = "Oleh Luzhniak - About me";
   }, []);
@@ -32,10 +35,12 @@ const AboutPage = () => {
         <WorkTab title="personal-info" rightBorder>
           <Outlet />
         </WorkTab>
-        <WorkTab className="md">
-          <CodeSnippet data={codeList[0]}></CodeSnippet>
-          <CodeSnippet data={codeList[1]}></CodeSnippet>
-        </WorkTab>
+        {!matches && (
+          <WorkTab>
+            <CodeSnippet data={codeList[0]}></CodeSnippet>
+            <CodeSnippet data={codeList[1]}></CodeSnippet>
+          </WorkTab>
+        )}
       </Work>
     </Main>
   );

@@ -8,7 +8,11 @@ export const MenuList = styled.ul`
   padding: 0;
   border-bottom: 1px solid #1e2d3d;
   @media only screen and (max-width: 767px) {
+    width: 100%;
+    background-color: #011627;
     flex-direction: column;
+    position: absolute;
+    z-index: 100;
   }
 `;
 
@@ -32,6 +36,7 @@ export const MenuItem = styled.li`
   @media only screen and (max-width: 767px) {
     margin: 0;
     border: none;
+
     &.hide {
       display: none;
     }
@@ -61,5 +66,6 @@ export const ToggleMenu = styled.button`
 
   @media only screen and (max-width: 767px) {
     display: flex;
+    z-index: 200;
   }
 `;

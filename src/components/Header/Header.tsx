@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <MenuList>
+        <MenuList onClick={() => setIsHideMobileMenu(true)}>
           <MenuItem className="start">
             <LogoLink to="/">Oleh Luzhniak</LogoLink>
           </MenuItem>

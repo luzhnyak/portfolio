@@ -1,5 +1,6 @@
 export const codeList = [
   {
+    id: 1,
     user: "luzhnyak",
     dateCreate: "5 month ago",
     countStar: 3,
@@ -14,6 +15,7 @@ function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {
 `.trim(),
   },
   {
+    id: 2,
     user: "luzhnyak",
     dateCreate: "5 month ago",
     countStar: 1,
@@ -27,6 +29,7 @@ export function parseModelTuple(
 `.trim(),
   },
   {
+    id: 3,
     user: "luzhnyak",
     dateCreate: "4 month ago",
     countStar: 2,

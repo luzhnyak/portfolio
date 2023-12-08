@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   /* padding: 16px; */
 
   /* background-color: aliceblue; */
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1399px) {
     padding: 0 50px;
     width: 100%;
   }

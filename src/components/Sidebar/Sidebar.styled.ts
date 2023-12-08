@@ -18,6 +18,7 @@ export const SidebarWrapper = styled.aside`
   overflow: auto;
   @media only screen and (max-width: 767px) {
     width: 100%;
+    margin-top: 58px;
   }
 `;
 
@@ -35,4 +36,5 @@ export const SidebarTitleWrapper = styled.div<Props>`
 
 export const SidebarTitle = styled.div`
   padding: 10px;
+  cursor: pointer;
 `;

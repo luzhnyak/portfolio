@@ -11,7 +11,7 @@ import { codeList } from "../../data/codeList";
 
 const GalleryCode = () => {
   return (
-    <GalleryWrapper className="md">
+    <GalleryWrapper>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -37,7 +37,7 @@ const GalleryCode = () => {
       >
         {codeList.map((item) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={item.id}>
               <CodeSnippet data={item} />
             </SwiperSlide>
           );
