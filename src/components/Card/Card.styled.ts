@@ -10,12 +10,10 @@ export const CardWrapper = styled.div`
 
 export const CardTitle = styled.h2`
   color: #5565e8;
-
-  font-family: Fira Code;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  margin-bottom: 14px;
+
   & span {
     color: #607b96;
     font-weight: 450;

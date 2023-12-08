@@ -14,10 +14,4 @@ export const FilterList = styled.ul`
 
 export const FilterItem = styled.li`
   margin-bottom: 16px;
-  & label {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 8px;
-  }
 `;

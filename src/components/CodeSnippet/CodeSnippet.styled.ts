@@ -11,11 +11,12 @@ export const CodeSnippetWrapper = styled.div`
 
 export const CodeSnippetTitleWrapper = styled.div`
   display: flex;
+  justify-content: flex-start;
   gap: 16px;
   margin-bottom: 12px;
   text-align: left;
-  div {
-    margin-right: auto;
+  .end {
+    margin-left: auto;
   }
 `;
 
@@ -23,6 +24,13 @@ export const CodeSnippetContent = styled.div`
   border-radius: 15px;
   border: 1px solid #1e2d3d;
   background: #011221;
+`;
+
+export const Avatar = styled.img`
+  border-radius: 50%;
+  display: block;
+  width: 36px;
+  height: 36px;
 `;
 
 export const UserName = styled.p`

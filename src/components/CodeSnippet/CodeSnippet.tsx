@@ -5,6 +5,7 @@ import Prism from "prismjs";
 import { FaStar, FaCommentDots } from "react-icons/fa";
 
 import {
+  Avatar,
   CodeSnippetContent,
   CodeSnippetTitleWrapper,
   CodeSnippetWrapper,
@@ -33,11 +34,14 @@ const CodeSnippet: React.FC<Props> = ({
     <CodeSnippetWrapper>
       <CodeSnippetTitleWrapper>
         <div>
+          <Avatar src="https://avatars.githubusercontent.com/u/28703144?s=60&v=4" />
+        </div>
+        <div>
           <UserName>{`@${user}`}</UserName>
           <DateCreate>{`Created ${dateCreate}`}</DateCreate>
         </div>
 
-        <Details>
+        <Details className="end">
           <FaCommentDots />
           details
         </Details>
