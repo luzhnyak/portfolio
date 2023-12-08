@@ -11,7 +11,7 @@ import { codeList } from "../../data/codeList";
 
 const GalleryCode = () => {
   return (
-    <GalleryWrapper>
+    <GalleryWrapper className="md">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

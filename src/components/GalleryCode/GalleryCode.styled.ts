@@ -8,6 +8,6 @@ export const GalleryWrapper = styled.div`
   /* background-color: aquamarine; */
 
   height: 100%;
-  width: 800px;
+  width: 50%;
   /* margin-top: 40px; */
 `;

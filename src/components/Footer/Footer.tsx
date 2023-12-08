@@ -29,7 +29,7 @@ const Footer = () => {
               <FaFacebookF size={24} />
             </FooterLink>
           </FooterItem>
-          <FooterItem className="end">
+          <FooterItem className="end md">
             <FooterLink href="https://github.com/luzhnyak" target="_blank">
               @luzhnyak <FaGithub size={24} />
             </FooterLink>

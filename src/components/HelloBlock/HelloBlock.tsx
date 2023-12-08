@@ -1,5 +1,6 @@
 import {
   CommentText,
+  Conntent,
   GitHubLink,
   SubTitle,
   Title,
@@ -10,15 +11,21 @@ import {
 const HelloBlock = () => {
   return (
     <Wrapper>
-      <UperTitle>Hi all. I am</UperTitle>
-      <Title>Oleh Luzhniak</Title>
-      <SubTitle>{">"} Front-end developer</SubTitle>
-      <CommentText>// complete the game to continue</CommentText>
-      <CommentText>// you can also see it on my Github page</CommentText>
-      <GitHubLink>
-        const <span>githubLink = </span>
-        <a href="">“https://github.com/example/url”</a>
-      </GitHubLink>
+      <Conntent>
+        <UperTitle>Hi all. I am</UperTitle>
+        <Title>Oleh Luzhniak</Title>
+        <SubTitle>{">"} Front-end developer</SubTitle>
+        <CommentText className="md">
+          // complete the game to continue
+        </CommentText>
+        <CommentText>// you can also see it on my Github page</CommentText>
+        <GitHubLink>
+          const <span>githubLink = </span>
+          <a href="https://github.com/luzhnyak" target="_blank">
+            “https://github.com/luzhnyak”
+          </a>
+        </GitHubLink>
+      </Conntent>
     </Wrapper>
   );
 };

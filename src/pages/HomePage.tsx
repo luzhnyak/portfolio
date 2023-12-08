@@ -15,7 +15,6 @@ const HomePage = () => {
     <Main justifyContent="center">
       <Work>
         <HelloBlock />
-        {/* <img src={gameImg} className="md" /> */}
         <GalleryCode />
       </Work>
     </Main>

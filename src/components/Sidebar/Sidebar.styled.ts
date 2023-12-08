@@ -9,13 +9,13 @@ export const SidebarWrapper = styled.aside`
   width: 300px;
   height: 100%;
   border-right: 1px solid #1e2d3d;
-
   color: #607b96;
   font-family: Fira Code;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  overflow: auto;
   @media only screen and (max-width: 767px) {
     width: 100%;
   }

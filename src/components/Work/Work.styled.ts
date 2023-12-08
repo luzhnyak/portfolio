@@ -7,8 +7,8 @@ type Props = {
 export const WorkWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
   height: 100%;
   flex: 1;
   overflow: auto;
@@ -20,6 +20,7 @@ export const WorkWrapper = styled.div`
 export const WorkTabWrapper = styled.section<Props>`
   display: flex;
   flex-direction: column;
+
   /* background-color: antiquewhite; */
   /* width: 289px; */
   height: 100%;
@@ -35,7 +36,7 @@ export const WorkContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   border-top: 1px solid #1e2d3d;
   height: 100%;
   overflow: auto;
