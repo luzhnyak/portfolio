@@ -16,5 +16,6 @@ export const MainWrapper = styled.main<Props>`
   @media only screen and (max-width: 767px) {
     flex-direction: column;
     height: 100%;
+    min-height: calc(100vh - 84px);
   }
 `;

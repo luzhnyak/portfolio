@@ -12,11 +12,18 @@ export const Wrapper = styled.div`
   @media only screen and (max-width: 1399px) {
     padding: 0 50px;
     width: 100%;
+    height: calc(100vh - 90px);
   }
 `;
 
 export const Conntent = styled.div`
   /* background-color: gray; */
+  /* height: 100%; */
+  @media only screen and (max-width: 767px) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const UperTitle = styled.p`
@@ -25,7 +32,7 @@ export const UperTitle = styled.p`
   font-size: 18px;
   font-weight: 450;
   @media only screen and (max-width: 767px) {
-    margin-top: 96px;
+    margin-top: 120px;
   }
 `;
 
@@ -47,7 +54,7 @@ export const SubTitle = styled.h2`
   margin-bottom: 80px;
   @media only screen and (max-width: 767px) {
     margin-top: 5px;
-    margin-bottom: 195px;
+    margin-bottom: auto;
     font-size: 28px;
     color: #43d9ad;
   }
@@ -69,6 +76,7 @@ export const GitHubLink = styled.p`
   color: #4d5bce;
   font-size: 16px;
   font-weight: 500;
+  margin-bottom: 85px;
 
   & span {
     color: #43d9ad;

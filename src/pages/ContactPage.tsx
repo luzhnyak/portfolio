@@ -37,11 +37,9 @@ const splitMessage = (message: string): string => {
 };
 
 const ContactPage = () => {
-  const [name, setName] = useState("Jonathan Davis");
-  const [email, setEmail] = useState("jonathan-davis@gmail.com");
-  const [message, setMessage] = useState(
-    "Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!"
-  );
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const code = `const button = document.querySelector('#sendBtn');
 
