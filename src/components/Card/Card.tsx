@@ -28,7 +28,7 @@ const Card: React.FC<Props> = ({
         Project {id} <span>// {name}</span>
       </CardTitle>
       <CardContent>
-        <CardImg src={`../../../public/${name}/${img[0]}`} />
+        <CardImg src={`./${name}/${img[0]}`} />
         <CardText>{description}</CardText>
         <CardButton
           onClick={() => {

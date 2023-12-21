@@ -73,7 +73,7 @@ export const Content = styled.div`
 
 export const ImagesWrapper = styled.div`
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
 `;
 
 export const Img = styled.img`

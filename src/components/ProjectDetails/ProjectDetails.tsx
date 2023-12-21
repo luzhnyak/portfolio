@@ -66,7 +66,7 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
               {imgs.map((img) => {
                 return (
                   <SwiperSlide>
-                    <Img src={`../../../public/${name}/${img}`} />
+                    <Img src={`./${name}/${img}`} />
                   </SwiperSlide>
                 );
               })}
