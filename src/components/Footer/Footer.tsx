@@ -25,7 +25,10 @@ const Footer = () => {
             </FooterLink>
           </FooterItem>
           <FooterItem>
-            <FooterLink href="/">
+            <FooterLink
+              href="https://www.facebook.com/luzhnyak/"
+              target="_blank"
+            >
               <FaFacebookF size={24} />
             </FooterLink>
           </FooterItem>

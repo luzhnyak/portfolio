@@ -67,13 +67,9 @@ export const CardButton = styled.button`
   color: #fff;
   border-radius: 8px;
   border: none;
-
   text-align: right;
-  font-family: Fira Code;
   font-size: 14px;
-  font-style: normal;
   font-weight: 450;
-  line-height: normal;
 
   &:hover {
     background-color: #1c5b3a;

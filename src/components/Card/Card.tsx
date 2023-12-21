@@ -14,9 +14,11 @@ type Props = {
   text: string;
   url: string;
   name: string;
+  isModalShow: boolean;
+  setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Card: React.FC<Props> = ({ id, img, text, name }) => {
+const Card: React.FC<Props> = ({ id, img, text, name, setIsModalShow }) => {
   return (
     <CardWrapper>
       <CardTitle>
@@ -25,7 +27,13 @@ const Card: React.FC<Props> = ({ id, img, text, name }) => {
       <CardContent>
         <CardImg src={img} />
         <CardText>{text}</CardText>
-        <CardButton>view-project</CardButton>
+        <CardButton
+          onClick={() => {
+            setIsModalShow(true);
+          }}
+        >
+          view-project
+        </CardButton>
       </CardContent>
     </CardWrapper>
   );

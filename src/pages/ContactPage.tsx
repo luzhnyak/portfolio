@@ -74,15 +74,27 @@ button.addEventListener('click', () => {
           <ContactsList>
             <ContactsItem>
               <FaExternalLinkAlt size={16} />
-              <a>YouTube channel</a>
+              <a
+                href="https://www.youtube.com/@GoldFishNetinua"
+                target="_blank"
+              >
+                YouTube channel
+              </a>
             </ContactsItem>
             <ContactsItem>
               <FaExternalLinkAlt size={16} />
-              <a>LinkedIn</a>
+              <a href="https://www.linkedin.com/in/luzhnyak/" target="_blank">
+                LinkedIn
+              </a>
             </ContactsItem>
             <ContactsItem>
               <FaExternalLinkAlt size={16} />
-              <a>Instagram accaunt</a>
+              <a
+                href="https://www.instagram.com/oleg.luzhnyak/"
+                target="_blank"
+              >
+                Instagram accaunt
+              </a>
             </ContactsItem>
           </ContactsList>
         </SidebarBlock>

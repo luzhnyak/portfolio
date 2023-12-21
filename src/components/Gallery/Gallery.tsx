@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import imgWebstudio from "/webstudio.jpg";
 import imgBookshelf from "/bookshelf.jpg";
@@ -11,6 +11,7 @@ import imgSaperwpf from "/saperwpf.jpg";
 
 import { GalleryWrapper } from "./Gallery.styled";
 import Card from "../Card/Card";
+import ProjectDetails from "../ProjectDetails/ProjectDetails";
 
 const projects = [
   {
@@ -98,6 +99,8 @@ type Props = {
 };
 
 const Gallery: React.FC<Props> = ({ filters }) => {
+  const [isModalShow, setIsModalShow] = useState(false);
+
   const filteredProjects = projects.filter((project) => {
     let k = false;
     project.tags.forEach((tag) => {
@@ -109,20 +112,25 @@ const Gallery: React.FC<Props> = ({ filters }) => {
   });
 
   return (
-    <GalleryWrapper>
-      {filteredProjects.map(({ id, description, img, url, name }) => {
-        return (
-          <Card
-            key={id}
-            id={id}
-            img={img}
-            text={description}
-            url={url}
-            name={name}
-          />
-        );
-      })}
-    </GalleryWrapper>
+    <>
+      <GalleryWrapper>
+        {filteredProjects.map(({ id, description, img, url, name }) => {
+          return (
+            <Card
+              key={id}
+              id={id}
+              img={img}
+              text={description}
+              url={url}
+              name={name}
+              isModalShow={isModalShow}
+              setIsModalShow={setIsModalShow}
+            />
+          );
+        })}
+      </GalleryWrapper>
+      {isModalShow && <ProjectDetails setIsModalShow={setIsModalShow} />}
+    </>
   );
 };
 
