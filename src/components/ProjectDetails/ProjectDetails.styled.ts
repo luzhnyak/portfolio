@@ -6,7 +6,6 @@ import styled from "styled-components";
 
 export const Backdrop = styled.div`
   background-color: rgba(0, 0, 0, 0.6);
-
   position: fixed;
   top: 0;
   left: 0;
@@ -16,11 +15,92 @@ export const Backdrop = styled.div`
 
 export const Modal = styled.div`
   width: 600px;
-  height: 400px;
+
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+
   border-radius: 8px;
   position: absolute;
   background-color: #011221;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+`;
+
+export const ButtonClose = styled.button`
+  position: absolute;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  color: #1e2d3d;
+  :hover {
+    color: white;
+    /* border: 1px solid #fff; */
+  }
+`;
+
+export const Title = styled.h2`
+  color: #5565e8;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+
+  & span {
+    color: #607b96;
+    font-weight: 450;
+  }
+`;
+
+export const Content = styled.div`
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-radius: 15px;
+  border: 1px solid #1e2d3d;
+  background: #011221;
+
+  overflow: hidden;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+`;
+
+export const Text = styled.p`
+  margin-top: 24px;
+  margin-bottom: 22px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #607b96;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 150%; /* 27px */
+  overflow-y: hidden;
+  height: 54px;
+`;
+
+export const Tags = styled.ul`
+  display: flex;
+  list-style: none;
+  gap: 8;
+  margin-bottom: 16px;
+`;
+
+export const Tag = styled.li`
+  &::after {
+    content: ",";
+    margin-right: 4px;
+  }
 `;

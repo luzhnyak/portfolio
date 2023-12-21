@@ -9,16 +9,18 @@ import {
 } from "./Card.styled";
 
 type Props = {
-  id: number;
-  img: string;
-  text: string;
-  url: string;
-  name: string;
+  project: IProject;
   isModalShow: boolean;
   setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
+  setSelectProject: React.Dispatch<React.SetStateAction<IProject | null>>;
 };
 
-const Card: React.FC<Props> = ({ id, img, text, name, setIsModalShow }) => {
+const Card: React.FC<Props> = ({
+  project,
+  setIsModalShow,
+  setSelectProject,
+}) => {
+  const { id, img, description, name } = project;
   return (
     <CardWrapper>
       <CardTitle>
@@ -26,9 +28,10 @@ const Card: React.FC<Props> = ({ id, img, text, name, setIsModalShow }) => {
       </CardTitle>
       <CardContent>
         <CardImg src={img} />
-        <CardText>{text}</CardText>
+        <CardText>{description}</CardText>
         <CardButton
           onClick={() => {
+            setSelectProject(project);
             setIsModalShow(true);
           }}
         >

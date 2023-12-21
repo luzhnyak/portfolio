@@ -1,105 +1,16 @@
 import React, { useState } from "react";
 
-import imgWebstudio from "/webstudio.jpg";
-import imgBookshelf from "/bookshelf.jpg";
-import imgGoldfishnet from "/goldfishnet.jpg";
-import imgFreshharvestbox from "/freshharvestbox.jpg";
-import imgFilmoteka from "/filmoteka.jpg";
-import imgMinesweeper from "/minesweeper.jpg";
-import imgPhonebook from "/phonebook.jpg";
-import imgSaperwpf from "/saperwpf.jpg";
-
 import { GalleryWrapper } from "./Gallery.styled";
 import Card from "../Card/Card";
 import ProjectDetails from "../ProjectDetails/ProjectDetails";
-
-const projects = [
-  {
-    id: 1,
-    name: "_webstudio",
-    title: "WebStudio",
-    description: "Навчальний проект в онлайн школі GoIT",
-    img: imgWebstudio,
-    url: "",
-    tags: ["html", "css", "javascript"],
-  },
-  {
-    id: 2,
-    name: "_bookshelf",
-    title: "Bookshelf",
-    description: "Проєкт інтернет-магазину для пошуку книжок.",
-    img: imgBookshelf,
-    url: "",
-    tags: ["html", "css", "javascript"],
-  },
-  {
-    id: 3,
-    name: "_goldfishnet",
-    title: "GoldFisNet",
-    description:
-      "Інтерактивна супутникова карта місць для рибальства і активного відпочинку в Україні.",
-    img: imgGoldfishnet,
-    url: "",
-    tags: ["html", "css", "python", "flask"],
-  },
-  {
-    id: 4,
-    name: "_fresh-harvest-box",
-    title: "Fresh Harvest Box",
-    description:
-      "Це проєкт інтернет-магазину органічних фруктів, де кожен охочий може придбати дуже смачні екологічні плоди.",
-    img: imgFreshharvestbox,
-    url: "",
-    tags: ["html", "css", "javascript"],
-  },
-  {
-    id: 5,
-    name: "_filmoteka",
-    title: "Filmoteka",
-    description: "Filmoteka",
-    img: imgFilmoteka,
-    url: "https://luzhnyak.github.io/filmoteka/",
-    urlGit: "https://github.com/luzhnyak/filmoteka",
-    tags: ["javascript", "html", "css"],
-  },
-  {
-    id: 6,
-    name: "_minesweeper",
-    title: "Minesweeper",
-    description: "Minesweeper",
-    img: imgMinesweeper,
-    url: "https://luzhnyak.github.io/minesweeper/",
-    urlGit: "https://github.com/luzhnyak/minesweeper",
-    tags: ["react", "html", "css"],
-  },
-  {
-    id: 7,
-    name: "_phonebook",
-    title: "Phonebook",
-    description: "Phonebook",
-    img: imgPhonebook,
-    url: "https://luzhnyak.github.io/phonebook",
-    urlGit: "https://github.com/luzhnyak/phonebook",
-    tags: ["react", "html", "css"],
-  },
-  {
-    id: 8,
-    name: "_saper-wpf",
-    title: "SaperWPF",
-    description: "Saper",
-    img: imgSaperwpf,
-    url: "",
-    urlGit: "",
-    tags: ["c#"],
-  },
-];
-
+import { projects } from "../../data/projects";
 type Props = {
   filters: string[];
 };
 
 const Gallery: React.FC<Props> = ({ filters }) => {
   const [isModalShow, setIsModalShow] = useState(false);
+  const [selectProject, setSelectProject] = useState<IProject | null>(null);
 
   const filteredProjects = projects.filter((project) => {
     let k = false;
@@ -114,22 +25,24 @@ const Gallery: React.FC<Props> = ({ filters }) => {
   return (
     <>
       <GalleryWrapper>
-        {filteredProjects.map(({ id, description, img, url, name }) => {
+        {filteredProjects.map((project) => {
           return (
             <Card
-              key={id}
-              id={id}
-              img={img}
-              text={description}
-              url={url}
-              name={name}
+              key={project.id}
+              project={project}
               isModalShow={isModalShow}
               setIsModalShow={setIsModalShow}
+              setSelectProject={setSelectProject}
             />
           );
         })}
       </GalleryWrapper>
-      {isModalShow && <ProjectDetails setIsModalShow={setIsModalShow} />}
+      {isModalShow && selectProject && (
+        <ProjectDetails
+          setIsModalShow={setIsModalShow}
+          project={selectProject}
+        />
+      )}
     </>
   );
 };
