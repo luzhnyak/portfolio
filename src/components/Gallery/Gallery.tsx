@@ -4,6 +4,7 @@ import { GalleryWrapper } from "./Gallery.styled";
 import Card from "../Card/Card";
 import ProjectDetails from "../ProjectDetails/ProjectDetails";
 import { projects } from "../../data/projects";
+import { IProject } from "../../types";
 type Props = {
   filters: string[];
 };

@@ -18,7 +18,7 @@ const ContactForm: React.FC<Props> = ({
   setEmail,
   setMessage,
 }) => {
-  const form: any = useRef();
+  const form = useRef<HTMLFormElement | any>();
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();

@@ -7,6 +7,7 @@ import {
   CardTitle,
   CardWrapper,
 } from "./Card.styled";
+import { IProject } from "../../types";
 
 type Props = {
   project: IProject;
@@ -27,7 +28,7 @@ const Card: React.FC<Props> = ({
         Project {id} <span>// {name}</span>
       </CardTitle>
       <CardContent>
-        <CardImg src={img} />
+        <CardImg src={`../../../public/${name}/${img[0]}`} />
         <CardText>{description}</CardText>
         <CardButton
           onClick={() => {

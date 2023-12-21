@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import {
   Backdrop,
   ButtonClose,
+  ImagesWrapper,
   Img,
   Modal,
   Tag,
@@ -11,6 +12,14 @@ import {
   Title,
 } from "./ProjectDetails.styled";
 import { IoClose } from "react-icons/io5";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { IProject } from "../../types";
 
 const modalRoot = document.querySelector("#modal-root") as HTMLElement;
 
@@ -35,7 +44,7 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
     setIsModalShow(false);
   };
 
-  const { id, name, title, description, img, tags } = project;
+  const { id, name, description, img: imgs, tags } = project;
 
   return createPortal(
     <Backdrop onClick={handleClick}>
@@ -48,7 +57,21 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
             Project {id}
             <span> // {name}</span>
           </Title>
-          <Img src={img}></Img>
+          <ImagesWrapper>
+            <Swiper
+              pagination={true}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              {imgs.map((img) => {
+                return (
+                  <SwiperSlide>
+                    <Img src={`../../../public/${name}/${img}`} />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </ImagesWrapper>
           <Text>{description}</Text>
           <Tags>
             {tags.map((tag) => {

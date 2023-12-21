@@ -5,7 +5,7 @@ import styled from "styled-components";
 // };
 
 export const Backdrop = styled.div`
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@ export const Backdrop = styled.div`
 `;
 
 export const Modal = styled.div`
-  width: 600px;
+  width: 800px;
 
   max-width: calc(100vw - 32px);
   max-height: calc(100vh - 32px);
@@ -69,6 +69,11 @@ export const Content = styled.div`
   background: #011221;
 
   overflow: hidden;
+`;
+
+export const ImagesWrapper = styled.div`
+  width: 100%;
+  height: 500px;
 `;
 
 export const Img = styled.img`

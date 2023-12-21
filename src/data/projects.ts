@@ -1,19 +1,16 @@
-import imgWebstudio from "/webstudio.jpg";
-import imgBookshelf from "/bookshelf.jpg";
-import imgGoldfishnet from "/goldfishnet.jpg";
-import imgFreshharvestbox from "/freshharvestbox.jpg";
-import imgFilmoteka from "/filmoteka.jpg";
-import imgMinesweeper from "/minesweeper.jpg";
-import imgPhonebook from "/phonebook.jpg";
-import imgSaperwpf from "/saperwpf.jpg";
-
 export const projects = [
   {
     id: 1,
     name: "_webstudio",
     title: "WebStudio",
     description: "Навчальний проект в онлайн школі GoIT",
-    img: imgWebstudio,
+    img: [
+      "webstudio-01.jpg",
+      "webstudio-02.jpg",
+      "webstudio-03.jpg",
+      "webstudio-05.jpg",
+      "webstudio-05.jpg",
+    ],
     url: "",
     tags: ["html", "css", "javascript"],
   },
@@ -22,8 +19,9 @@ export const projects = [
     name: "_bookshelf",
     title: "Bookshelf",
     description: "Проєкт інтернет-магазину для пошуку книжок.",
-    img: imgBookshelf,
-    url: "",
+    img: ["bookshelf-01.jpg", "bookshelf-02.jpg", "bookshelf-03.jpg        "],
+    url: "https://luzhnyak.github.io/project-abramis/index.html",
+    urlGit: "https://github.com/luzhnyak/project-abramis",
     tags: ["html", "css", "javascript"],
   },
   {
@@ -32,7 +30,7 @@ export const projects = [
     title: "GoldFisNet",
     description:
       "Інтерактивна супутникова карта місць для рибальства і активного відпочинку в Україні.",
-    img: imgGoldfishnet,
+    img: ["goldfishnet.jpg"],
     url: "",
     tags: ["html", "css", "python", "flask"],
   },
@@ -42,8 +40,16 @@ export const projects = [
     title: "Fresh Harvest Box",
     description:
       "Це проєкт інтернет-магазину органічних фруктів, де кожен охочий може придбати дуже смачні екологічні плоди.",
-    img: imgFreshharvestbox,
-    url: "",
+    img: [
+      "freshharvestbox-01.jpg",
+      "freshharvestbox-02.jpg",
+      "freshharvestbox-03.jpg",
+      "freshharvestbox-04.jpg",
+      "freshharvestbox-05.jpg",
+      "freshharvestbox-06.jpg",
+    ],
+    url: "https://luzhnyak.github.io/project-superdisco/",
+    urlGit: "https://github.com/luzhnyak/project-superdisco",
     tags: ["html", "css", "javascript"],
   },
   {
@@ -51,7 +57,7 @@ export const projects = [
     name: "_filmoteka",
     title: "Filmoteka",
     description: "Filmoteka",
-    img: imgFilmoteka,
+    img: ["filmoteka.jpg"],
     url: "https://luzhnyak.github.io/filmoteka/",
     urlGit: "https://github.com/luzhnyak/filmoteka",
     tags: ["javascript", "html", "css"],
@@ -61,7 +67,7 @@ export const projects = [
     name: "_minesweeper",
     title: "Minesweeper",
     description: "Minesweeper",
-    img: imgMinesweeper,
+    img: ["minesweeper.jpg"],
     url: "https://luzhnyak.github.io/minesweeper/",
     urlGit: "https://github.com/luzhnyak/minesweeper",
     tags: ["react", "html", "css"],
@@ -71,7 +77,7 @@ export const projects = [
     name: "_phonebook",
     title: "Phonebook",
     description: "Phonebook",
-    img: imgPhonebook,
+    img: ["phonebook.jpg"],
     url: "https://luzhnyak.github.io/phonebook",
     urlGit: "https://github.com/luzhnyak/phonebook",
     tags: ["react", "html", "css"],
@@ -81,7 +87,7 @@ export const projects = [
     name: "_saper-wpf",
     title: "SaperWPF",
     description: "Saper",
-    img: imgSaperwpf,
+    img: ["saperwpf.jpg"],
     url: "",
     urlGit: "",
     tags: ["c#"],
