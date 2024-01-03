@@ -15,7 +15,7 @@ import { codeList } from "../data/codeList";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const AboutPage = () => {
-  const matches = useMediaQuery("(max-width: 767px)");
+  const matches = useMediaQuery("(max-width: 1610px)");
 
   useEffect(() => {
     document.title = "Oleh Luzhniak - About me";

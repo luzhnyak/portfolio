@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 import {
   WorkContentWrapper,
   WorkTabWrapper,
-  WorkTitle,
+  // WorkTitle,
   WorkTitleWrapper,
 } from "./Work.styled";
 
@@ -27,9 +27,9 @@ const WorkTab: React.FC<Props> = ({
       <WorkTitleWrapper $rightBorder={!!title}>
         {title && (
           <>
-            <WorkTitle>
-              <span>{title}</span>
-            </WorkTitle>
+            {/* <WorkTitle> */}
+            <span>{title}</span>
+            {/* </WorkTitle> */}
             <IoClose size={18} />
           </>
         )}

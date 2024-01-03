@@ -48,10 +48,12 @@ export const WorkTitleWrapper = styled.div<Props>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 16px;
 
-  height: 43px;
-  padding-left: 14px;
-  padding-right: 14px;
+  font-weight: 400;
+  line-height: normal;
+  height: 45px;
+  padding: 0px 14px;
   width: 230px;
 
   border-right: ${(props) =>
@@ -62,6 +64,4 @@ export const WorkTitleWrapper = styled.div<Props>`
   }
 `;
 
-export const WorkTitle = styled.div`
-  padding: 10px;
-`;
+export const WorkTitle = styled.div``;

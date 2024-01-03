@@ -13,6 +13,7 @@ export const projects = [
     ],
     url: "",
     tags: ["html", "css", "javascript"],
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ export const projects = [
     url: "https://luzhnyak.github.io/project-abramis/index.html",
     urlGit: "https://github.com/luzhnyak/project-abramis",
     tags: ["html", "css", "javascript"],
+    technologies: ["HTML", "CSS", "JavaScript", "RESTful API"],
   },
   {
     id: 3,
@@ -33,6 +35,15 @@ export const projects = [
     img: ["goldfishnet.jpg"],
     url: "",
     tags: ["html", "css", "python", "flask"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Flask",
+      "RESTful API",
+      "Google Maps API",
+    ],
   },
   {
     id: 4,
@@ -51,6 +62,7 @@ export const projects = [
     url: "https://luzhnyak.github.io/project-superdisco/",
     urlGit: "https://github.com/luzhnyak/project-superdisco",
     tags: ["html", "css", "javascript"],
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 5,
@@ -60,7 +72,8 @@ export const projects = [
     img: ["filmoteka.jpg"],
     url: "https://luzhnyak.github.io/filmoteka/",
     urlGit: "https://github.com/luzhnyak/filmoteka",
-    tags: ["javascript", "html", "css"],
+    tags: ["javascript", "html", "css", "react"],
+    technologies: ["HTML", "CSS", "JavaScript", "React", "RESTful API"],
   },
   {
     id: 6,
@@ -71,6 +84,7 @@ export const projects = [
     url: "https://luzhnyak.github.io/minesweeper/",
     urlGit: "https://github.com/luzhnyak/minesweeper",
     tags: ["react", "html", "css"],
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
     id: 7,
@@ -80,7 +94,8 @@ export const projects = [
     img: ["phonebook.jpg"],
     url: "https://luzhnyak.github.io/phonebook",
     urlGit: "https://github.com/luzhnyak/phonebook",
-    tags: ["react", "html", "css"],
+    tags: ["react", "html", "css", "javascript"],
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Redux"],
   },
   {
     id: 8,
@@ -91,5 +106,6 @@ export const projects = [
     url: "",
     urlGit: "",
     tags: ["c#"],
+    technologies: ["C#", "WPF"],
   },
 ];

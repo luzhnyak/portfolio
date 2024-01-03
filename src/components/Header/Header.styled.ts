@@ -33,6 +33,10 @@ export const MenuItem = styled.li`
     width: 300px;
   }
 
+  &:has(.active) {
+    border-bottom: 3px solid #fea55f;
+  }
+
   @media only screen and (max-width: 767px) {
     margin: 0;
     border: none;

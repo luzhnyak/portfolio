@@ -84,27 +84,31 @@ export const Img = styled.img`
 `;
 
 export const Text = styled.p`
-  margin-top: 24px;
-  margin-bottom: 22px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 16px 22px;
   color: #607b96;
   font-size: 18px;
   font-weight: 450;
   line-height: 150%; /* 27px */
   overflow-y: hidden;
-  height: 54px;
 `;
 
 export const Tags = styled.ul`
   display: flex;
   list-style: none;
   gap: 8;
-  margin-bottom: 16px;
+  margin: 0 22px 30px 22px;
+  color: #607b96;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%; /* 27px */
+  overflow-y: hidden;
+  & b {
+    margin-right: 4px;
+  }
 `;
 
 export const Tag = styled.li`
-  &::after {
+  &:not(:last-child)::after {
     content: ",";
     margin-right: 4px;
   }

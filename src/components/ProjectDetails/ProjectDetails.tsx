@@ -44,7 +44,7 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
     setIsModalShow(false);
   };
 
-  const { id, name, description, img: imgs, tags } = project;
+  const { id, name, description, img: imgs, technologies } = project;
 
   return createPortal(
     <Backdrop onClick={handleClick}>
@@ -74,7 +74,8 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
           </ImagesWrapper>
           <Text>{description}</Text>
           <Tags>
-            {tags.map((tag) => {
+            <b>Technologies: </b>
+            {technologies.map((tag) => {
               return <Tag>{tag}</Tag>;
             })}
           </Tags>

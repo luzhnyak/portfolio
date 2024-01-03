@@ -6,4 +6,5 @@ export interface IProject {
   img: string[];
   url: string;
   tags: string[];
+  technologies: string[];
 }
