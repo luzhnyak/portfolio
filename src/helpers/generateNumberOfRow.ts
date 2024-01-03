@@ -1,11 +1,9 @@
-export const generateNumberOfRow = (text: string): string => {
-  const countRow = text.split("\n").length - 1;
+export const generateNumberOfRow = (countRow: number): string => {
+  let namberOfRow = "1   /**\n";
 
-  let namberOfRow = "";
-
-  for (let i = 1; i <= countRow + 1; i++) {
-    namberOfRow += `${i}\n`;
+  for (let i = 2; i <= countRow; i++) {
+    namberOfRow += `${String(i).padEnd(3, " ")} *\n`;
   }
 
-  return namberOfRow;
+  return namberOfRow.trim() + "/";
 };
