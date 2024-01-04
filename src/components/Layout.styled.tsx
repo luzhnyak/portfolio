@@ -7,5 +7,10 @@ export const LayoutWrapper = styled.div`
   border: 1px solid #1e2d3d;
   background-color: #011627;
   overflow: hidden;
-  /* height: 100vh; */
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-rows: 56px 1fr 50px;
+    height: calc(100vh - 32px);
+  }
+  /* padding: 16px; */
 `;

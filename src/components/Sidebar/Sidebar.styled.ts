@@ -17,7 +17,7 @@ export const SidebarWrapper = styled.aside`
   overflow: auto;
   @media only screen and (max-width: 767px) {
     width: 100%;
-    margin-top: 58px;
+    /* margin-top: 58px; */
   }
 `;
 

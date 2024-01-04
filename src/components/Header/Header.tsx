@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {
+  HeaderWrapper,
   LogoLink,
   MenuItem,
   MenuLink,
@@ -17,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <HeaderWrapper>
       <nav>
         <MenuList onClick={() => setIsHideMobileMenu(true)}>
           <MenuItem className="start">
@@ -40,7 +41,7 @@ const Header = () => {
           <FaBars size={24} />
         </ToggleMenu>
       </nav>
-    </header>
+    </HeaderWrapper>
   );
 };
 

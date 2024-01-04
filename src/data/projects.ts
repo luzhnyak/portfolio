@@ -4,6 +4,7 @@ export const projects = [
     name: "_webstudio",
     title: "WebStudio",
     description: "Навчальний проект в онлайн школі GoIT",
+    description_ua: " Технічна реалізація сайту для web-студії.",
     img: [
       "webstudio-01.jpg",
       "webstudio-02.jpg",
@@ -20,6 +21,8 @@ export const projects = [
     name: "_bookshelf",
     title: "Bookshelf",
     description: "Проєкт інтернет-магазину для пошуку книжок.",
+    description_ua:
+      "Технічна реалізація сайту для пошуку книг в інтернет-магазині.",
     img: ["bookshelf-01.jpg", "bookshelf-02.jpg", "bookshelf-03.jpg        "],
     url: "https://luzhnyak.github.io/project-abramis/index.html",
     urlGit: "https://github.com/luzhnyak/project-abramis",

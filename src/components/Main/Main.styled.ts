@@ -10,8 +10,9 @@ export const MainWrapper = styled.main<Props>`
     props.$justifyContent ? props.$justifyContent : "flex-start"};
   align-items: flex-start;
   /* flex-wrap: wrap; */
-  height: calc(100vh - 144px);
+  height: calc(100vh - 138px);
   /* background-color: aqua; */
+  /* height: 100%; */
 
   @media only screen and (max-width: 767px) {
     flex-direction: column;

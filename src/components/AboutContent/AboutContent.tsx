@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { ContentWrapper } from "./AboutContent.styled";
 import { generateNumberOfRow } from "../../helpers/generateNumberOfRow";
 
 type Props = {
-  content: string;
+  content: ReactNode | ReactNode[];
 };
 
 const AboutContent: React.FC<Props> = ({ content }) => {
