@@ -7,7 +7,8 @@ export const projects = [
     description_ua:
       "Додаток для відстежування статистики свого водного режиму.",
     img: ["water-tracker.jpg"],
-    url: "",
+    url: "https://water-tracker.pp.ua",
+    urlGit: "https://github.com/luzhnyak/aqua-frontend",
     tags: ["html/css", "javascript", "typescript", "react", "node"],
     technologies: [
       "HTML/CSS",
@@ -34,7 +35,8 @@ export const projects = [
       "webstudio-05.jpg",
       "webstudio-05.jpg",
     ],
-    url: "",
+    url: "https://luzhnyak.github.io/webstudio",
+    urlGit: "https://github.com/luzhnyak/webstudio",
     tags: ["html/css", "javascript"],
     technologies: ["HTML/CSS", "JavaScript"],
   },
@@ -46,7 +48,7 @@ export const projects = [
     description_ua:
       "Технічна реалізація сайту для пошуку книг в інтернет-магазині.",
     img: ["bookshelf-01.jpg", "bookshelf-02.jpg", "bookshelf-03.jpg        "],
-    url: "https://luzhnyak.github.io/project-abramis/index.html",
+    url: "https://luzhnyak.github.io/project-abramis",
     urlGit: "https://github.com/luzhnyak/project-abramis",
     tags: ["html/css", "javascript"],
     technologies: ["HTML/CSS", "JavaScript", "RESTful API"],
@@ -58,7 +60,7 @@ export const projects = [
     description:
       "Інтерактивна супутникова карта місць для рибальства і активного відпочинку в Україні.",
     img: ["goldfishnet.jpg"],
-    url: "",
+    url: "https://goldfishnet.in.ua",
     tags: ["html/css", "python", "flask"],
     technologies: [
       "HTML",
@@ -130,7 +132,7 @@ export const projects = [
     description: "Логічна головоломка",
     img: ["saperwpf.jpg"],
     url: "https://luzhnyak.pp.ua/_saper-wpf/SaperWPF.zip",
-    urlGit: "",
+    urlGit: "https://github.com/luzhnyak/SaperWPF",
     tags: ["c#"],
     technologies: ["C#", "WPF"],
   },

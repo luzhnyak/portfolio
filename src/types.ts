@@ -4,7 +4,8 @@ export interface IProject {
   title: string;
   description: string;
   img: string[];
-  url: string;
+  url?: string;
+  urlGit?: string;
   tags: string[];
   technologies: string[];
 }

@@ -94,6 +94,7 @@ export const Text = styled.p`
 
 export const Tags = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   gap: 8;
   margin: 0 22px 30px 22px;

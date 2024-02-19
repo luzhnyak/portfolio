@@ -44,7 +44,15 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
     setIsModalShow(false);
   };
 
-  const { id, name, description, img: imgs, technologies } = project;
+  const {
+    id,
+    name,
+    description,
+    img: imgs,
+    technologies,
+    urlGit,
+    url,
+  } = project;
 
   return createPortal(
     <Backdrop onClick={handleClick}>
@@ -79,6 +87,15 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
             {technologies.map((tag) => {
               return <Tag>{tag}</Tag>;
             })}
+          </Tags>
+          <Tags>
+            <a href={urlGit} target="_blank">
+              GitHub
+            </a>
+            {" | "}
+            <a href={url} target="_blank">
+              Project
+            </a>
           </Tags>
         </div>
       </Modal>
