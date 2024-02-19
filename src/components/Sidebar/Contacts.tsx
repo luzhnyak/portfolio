@@ -1,4 +1,4 @@
-import { FaEnvelope, FaTelegramPlane } from "react-icons/fa";
+import { FaEnvelope, FaRegFilePdf, FaTelegramPlane } from "react-icons/fa";
 import { ContactsItem, ContactsList } from "./Contacts.styled";
 
 const Contacts = () => {
@@ -12,6 +12,12 @@ const Contacts = () => {
         <FaTelegramPlane size={16} />
         <a href="https://t.me/oleghaker" target="_blank">
           Telegram
+        </a>
+      </ContactsItem>
+      <ContactsItem>
+        <FaRegFilePdf size={16} />
+        <a href="/cv/oleh_luzhniak-cv_v2.pdf" target="_blank">
+          Curriculum vitae
         </a>
       </ContactsItem>
     </ContactsList>

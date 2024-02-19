@@ -8,7 +8,7 @@ import {
 } from "../components/Sidebar/Contacts.styled";
 import Sidebar from "../components/Sidebar/Sidebar";
 import SidebarBlock from "../components/Sidebar/SidebarBlock";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import Work from "../components/Work/Work";
 
 import ContactForm from "../components/ContactForm/ContactForm";
@@ -73,7 +73,7 @@ button.addEventListener('click', () => {
         <SidebarBlock title="find-me-also-in" topBorder>
           <ContactsList>
             <ContactsItem>
-              <FaExternalLinkAlt size={16} />
+              <FaYoutube size={16} />
               <a
                 href="https://www.youtube.com/@GoldFishNetinua"
                 target="_blank"
@@ -82,18 +82,18 @@ button.addEventListener('click', () => {
               </a>
             </ContactsItem>
             <ContactsItem>
-              <FaExternalLinkAlt size={16} />
+              <FaLinkedinIn size={16} />
               <a href="https://www.linkedin.com/in/luzhnyak/" target="_blank">
                 LinkedIn
               </a>
             </ContactsItem>
             <ContactsItem>
-              <FaExternalLinkAlt size={16} />
+              <FaInstagram size={16} />
               <a
                 href="https://www.instagram.com/oleg.luzhnyak/"
                 target="_blank"
               >
-                Instagram accaunt
+                Instagram account
               </a>
             </ContactsItem>
           </ContactsList>

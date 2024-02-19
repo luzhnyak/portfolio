@@ -37,14 +37,25 @@ export const aboutData = {
       Certifications:
       <br />
       <br />
-      Основи Web UI розробки 2022
+      <a href="/certifications/goit-full_stack_developer.pdf" target="_blank">
+        • Full Stack Developer
+      </a>
       <br />
       <br />
-      Introduction to TensorFlow for Artificial Intelligence, Machine Learning,
-      and Deep Learning
+      <a
+        href="/certifications/prometheus-basics_of_web_ui_development_2022.pdf"
+        target="_blank"
+      >
+        • Basic Web UI development 2022
+      </a>
       <br />
       <br />
-      Convolutional Neural Networks in TensorFlow
+      <a
+        href="/certifications/coursera-deep_learning.ai_tensorflow_developer.pdf"
+        target="_blank"
+      >
+        • DeepLearning.AI TensorFlow Developer
+      </a>
     </p>
   ),
   interests: (

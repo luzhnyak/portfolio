@@ -30,10 +30,10 @@ const AboutMenu = () => {
         <FaFolder color="#3A49A4" />
         <AboutLink to="university">education</AboutLink>
       </Item>
-      <Item className="tab">
+      {/* <Item className="tab">
         <FaFileCode color="#81A1C1" />
         <AboutLink to="university">university</AboutLink>
-      </Item>
+      </Item> */}
       <Item className="tab">
         <FaFileCode color="#81A1C1" />
         <AboutLink to="certifications">certifications</AboutLink>

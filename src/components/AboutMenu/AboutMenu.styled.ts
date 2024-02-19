@@ -20,8 +20,6 @@ export const Item = styled.li`
 
 export const AboutLink = styled(NavLink)`
   color: #607b96;
-
   font-size: 16px;
-
   font-weight: 400;
 `;

@@ -8,7 +8,7 @@ export const projects = [
       "Додаток для відстежування статистики свого водного режиму.",
     img: ["water-tracker.jpg"],
     url: "",
-    tags: ["html/css", "javascript", "typescript", "react", "node.js"],
+    tags: ["html/css", "javascript", "typescript", "react", "node"],
     technologies: [
       "HTML/CSS",
       "JavaScript",
@@ -59,7 +59,7 @@ export const projects = [
       "Інтерактивна супутникова карта місць для рибальства і активного відпочинку в Україні.",
     img: ["goldfishnet.jpg"],
     url: "",
-    tags: ["HTML/CSS", "python", "flask"],
+    tags: ["html/css", "python", "flask"],
     technologies: [
       "HTML",
       "CSS",
@@ -109,7 +109,7 @@ export const projects = [
     img: ["phonebook.jpg"],
     url: "https://luzhnyak.github.io/phonebook",
     urlGit: "https://github.com/luzhnyak/phonebook",
-    tags: ["react", "html/css", "javascript", "typescript"],
+    tags: ["react", "html/css", "javascript", "typescript", "node"],
     technologies: ["HTML/CSS", "JavaScript", "TypeScript", "React", "Redux"],
   },
   {

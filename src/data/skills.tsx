@@ -15,7 +15,6 @@ export const skills = [
     name: "html/css",
     title: "HTML/CSS",
     icon: <FaHtml5 size={24} />,
-    checked: true,
   },
   {
     name: "javascript",

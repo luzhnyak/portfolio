@@ -8,12 +8,8 @@ export const ContactsList = styled.ul`
 
 export const ContactsItem = styled.li`
   margin-left: 0;
-
   margin-bottom: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
-  & a {
-    color: #607b96;
-  }
 `;
