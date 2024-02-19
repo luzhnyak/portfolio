@@ -5,7 +5,7 @@ import styled from "styled-components";
 // };
 
 export const Backdrop = styled.div`
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -73,7 +73,7 @@ export const Content = styled.div`
 
 export const ImagesWrapper = styled.div`
   width: 100%;
-  /* height: 500px; */
+  height: 400px;
 `;
 
 export const Img = styled.img`

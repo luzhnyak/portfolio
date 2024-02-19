@@ -39,6 +39,7 @@ export const CardImg = styled.img`
   width: 100%;
   height: 146px;
   object-fit: cover;
+  object-position: top;
 `;
 
 export const CardText = styled.p`

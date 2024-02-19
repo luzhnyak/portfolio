@@ -1,7 +1,7 @@
 import {
   FaReact,
   FaHtml5,
-  FaCss3Alt,
+  // FaCss3Alt,
   FaPython,
   FaFlask,
   FaNodeJs,
@@ -12,15 +12,10 @@ import { SiTypescript, SiNextdotjs, SiCsharp } from "react-icons/si";
 
 export const skills = [
   {
-    name: "html",
-    title: "HTML",
+    name: "html/css",
+    title: "HTML/CSS",
     icon: <FaHtml5 size={24} />,
     checked: true,
-  },
-  {
-    name: "css",
-    title: "CSS",
-    icon: <FaCss3Alt size={24} />,
   },
   {
     name: "javascript",

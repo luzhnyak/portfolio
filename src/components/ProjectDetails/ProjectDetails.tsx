@@ -62,6 +62,7 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
               pagination={true}
               modules={[Pagination]}
               className="mySwiper"
+              height={250}
             >
               {imgs.map((img) => {
                 return (
