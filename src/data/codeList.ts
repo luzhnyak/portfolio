@@ -44,4 +44,17 @@ function scrollFunction() {
 }
 `.trim(),
   },
+  {
+    id: 4,
+    user: "luzhnyak",
+    dateCreate: "2 month ago",
+    countStar: 5,
+    code: `
+const modifiedChildren = React.Children.map(children, (child) =>
+  React.cloneElement(child as React.ReactElement, {
+    onClick: handleClickOpen,
+  })
+);
+`.trim(),
+  },
 ];

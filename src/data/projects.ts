@@ -1,6 +1,25 @@
 export const projects = [
   {
     id: 1,
+    name: "_e-pharmacy",
+    title: "E-pharmacy",
+    description:
+      "Dashboard, which displays information about income, expenses and other statistical data of the medical store.",
+    img: ["e-pharmacy.jpg"],
+    url: "https://epharmacy.vercel.app",
+    urlGit: "https://github.com/luzhnyak/e-pharmacy-fe",
+    tags: ["typescript", "html/css", "react"],
+    technologies: [
+      "HTML/CSS",
+      "TypeScript",
+      "React",
+      "RESTful API",
+      "RTK Query",
+      "React router dom",
+    ],
+  },
+  {
+    id: 2,
     name: "_water-tracker",
     title: "Water Tracker",
     description: "Навчальний проект в онлайн школі GoIT",
@@ -23,7 +42,38 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
+    name: "_vocab-builder",
+    title: "Vocab Builder",
+    description:
+      "Vocab Builder is an application for those who want to learn a foreign language on their own. ",
+    img: ["vocab-builder.jpg"],
+    url: "https://luzhnyak.github.io/vocab-builder",
+    urlGit: "https://github.com/luzhnyak/vocab-builder",
+    tags: ["typescript", "html/css", "react"],
+    technologies: ["HTML/CSS", "TypeScript", "React", "RESTful API", "Zustand"],
+  },
+  {
+    id: 4,
+    name: "_rent-cars",
+    title: "Rent Cars",
+    description:
+      "This is a sample project showcasing a car rental application.",
+    img: ["rent-cars.jpg"],
+    url: "https://luzhnyak.github.io/rent-cars",
+    urlGit: "https://github.com/luzhnyak/rent-cars",
+    tags: ["javascript", "html/css", "react"],
+    technologies: [
+      "HTML/CSS",
+      "JavaScript",
+      "React",
+      "ReduxToolkit",
+      "Axios",
+      "React router dom",
+    ],
+  },
+  {
+    id: 5,
     name: "_webstudio",
     title: "WebStudio",
     description: "Навчальний проект в онлайн школі GoIT",
@@ -41,7 +91,7 @@ export const projects = [
     technologies: ["HTML/CSS", "JavaScript"],
   },
   {
-    id: 3,
+    id: 6,
     name: "_bookshelf",
     title: "Bookshelf",
     description: "Проєкт інтернет-магазину для пошуку книжок.",
@@ -54,7 +104,7 @@ export const projects = [
     technologies: ["HTML/CSS", "JavaScript", "RESTful API"],
   },
   {
-    id: 4,
+    id: 7,
     name: "_goldfishnet",
     title: "GoldFisNet",
     description:
@@ -73,7 +123,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 8,
     name: "_fresh-harvest-box",
     title: "Fresh Harvest Box",
     description:
@@ -92,7 +142,7 @@ export const projects = [
     technologies: ["HTML/CSS", "JavaScript"],
   },
   {
-    id: 6,
+    id: 9,
     name: "_filmoteka",
     title: "Filmoteka",
     description: "Додаток для пошук фільмів",
@@ -104,7 +154,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 10,
     name: "_phonebook",
     title: "Phonebook",
     description: "Додаток для збереження контактних даних",
@@ -112,10 +162,16 @@ export const projects = [
     url: "https://luzhnyak.github.io/phonebook",
     urlGit: "https://github.com/luzhnyak/phonebook",
     tags: ["react", "html/css", "javascript", "typescript", "node"],
-    technologies: ["HTML/CSS", "JavaScript", "TypeScript", "React", "Redux"],
+    technologies: [
+      "HTML/CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "RTK Query",
+    ],
   },
   {
-    id: 7,
+    id: 11,
     name: "_minesweeper",
     title: "Minesweeper",
     description: "Логічна головоломка",
@@ -126,7 +182,7 @@ export const projects = [
     technologies: ["HTML/CSS", "JavaScript", "React"],
   },
   {
-    id: 9,
+    id: 12,
     name: "_saper-wpf",
     title: "SaperWPF",
     description: "Логічна головоломка",

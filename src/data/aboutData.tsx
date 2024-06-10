@@ -56,6 +56,11 @@ export const aboutData = {
       >
         • DeepLearning.AI TensorFlow Developer
       </a>
+      <br />
+      <br />
+      <a href="/certifications/certificat_eliftech.jpg" target="_blank">
+        • React & Node.js
+      </a>
     </p>
   ),
   interests: (
