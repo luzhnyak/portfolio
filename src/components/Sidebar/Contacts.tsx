@@ -16,7 +16,7 @@ const Contacts = () => {
       </ContactsItem>
       <ContactsItem>
         <FaRegFilePdf size={16} />
-        <a href="/cv/oleh_luzhniak-cv_v2.pdf" target="_blank">
+        <a href="/cv/oleh_luzhniak-cv_v3.pdf" target="_blank">
           Curriculum vitae
         </a>
       </ContactsItem>

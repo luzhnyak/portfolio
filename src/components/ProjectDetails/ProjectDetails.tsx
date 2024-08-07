@@ -89,13 +89,17 @@ const ProjectDetails: React.FC<Props> = ({ setIsModalShow, project }) => {
             })}
           </Tags>
           <Tags>
-            <a href={urlGit} target="_blank">
-              GitHub
-            </a>
+            {urlGit && (
+              <a href={urlGit} target="_blank">
+                GitHub
+              </a>
+            )}
             {" | "}
-            <a href={url} target="_blank">
-              Project
-            </a>
+            {url && (
+              <a href={url} target="_blank">
+                Project
+              </a>
+            )}
           </Tags>
         </div>
       </Modal>
